@@ -55,6 +55,7 @@
  * @author Romaine
  * @author Siebrand
  * @author Sjoerddebruin
+ * @author Steven.w
  * @author Tvdm
  */
 
@@ -101,6 +102,7 @@ $s_unassigned_projects_label = 'Niet-toegewezen projecten';
 $s_copy_users = 'Gebruikers kopiëren';
 $s_copy_categories_from = 'Categorieën kopiëren van';
 $s_copy_categories_to = 'Categorieën kopiëren naar';
+$s_copy_categories_exclude_inherited = 'Overgeërfde categorieën uitsluiten';
 $s_copy_versions_from = 'Versies kopiëren van';
 $s_copy_versions_to = 'Versies kopiëren naar';
 $s_copy_users_from = 'Gebruikers kopiëren van';
@@ -261,7 +263,7 @@ $s_email_notification_title_for_action_has_duplicate_relationship_deleted = 'De 
 $s_email_notification_title_for_action_related_to_relationship_deleted = 'De volgende melding is NIET LANGER GERELATEERD aan melding %1$s.';
 $s_email_notification_title_for_action_dependant_on_relationship_deleted = 'De volgende melding BEVAT melding %1$s NIET LANGER.';
 $s_email_notification_title_for_action_blocks_relationship_deleted = 'De volgende melding MAAKT GEEN DEEL MEER UIT van melding %1$s.';
-$s_email_notification_title_for_action_relationship_child_resolved = 'De GERELATEERDE melding %1$s is OPLGELOST.';
+$s_email_notification_title_for_action_relationship_child_resolved = 'De GERELATEERDE melding %1$s is OPGELOST.';
 $s_email_notification_title_for_action_relationship_child_closed = 'De GERELATEERDE melding %1$s is AFGESLOTEN.';
 $s_email_notification_title_for_action_related_issue_deleted = 'De GERELATEERDE melding %1$s is VERWIJDERD.';
 $s_email_notification_title_for_action_monitor = 'Melding %1$s wordt nu gevolgd door gebruiker %2$s.';
@@ -636,6 +638,7 @@ $s_readonly_status = 'Status waarbij een melding alleen-lezen wordt';
 $s_reopen_status = 'Status waarop een heropende melding wordt ingesteld';
 $s_reopen_resolution = 'Oplossing die voor een heropende melding wordt ingesteld';
 $s_limit_view_unless_threshold_option = 'Meldingen van andere gebruikers bekijken (als dit niet is ingesteld wordt de toegang beperkt tot meldingen die door de gebruiker zijn ingediend, afgehandeld of gecontroleerd)';
+$s_export_issues = 'Meldingen exporteren';
 $s_config_delete_sure = 'Weet u zeker dat u de instellingen wilt verwijderen voor %1$s in het project %2$s?';
 $s_delete_config_button = 'Instellingen verwijderen';
 $s_configuration_report = 'Instellingenrapport';
@@ -861,6 +864,7 @@ $s_signup_done_title = 'Accountregistratie verwerkt.';
 $s_password_emailed_msg = 'Gefeliciteerd. Uw registratie is verwerkt. U ontvangt nu een e-mail om uw e-mailadres te controleren. In dit bericht vindt u instructies om uw gebruiker te activeren.';
 $s_no_reponse_msg = 'U hebt zeven dagen om het registratieproces af te ronden. Wanneer u dit niet doet binnen deze periode, kan de nieuwe gebruiker verwijderd worden.';
 $s_signup_captcha_request_label = 'Voer de code in zoals deze rechts in beeld weergegeven wordt:';
+$s_signup_captcha_play = 'De audio van de captcha-code afspelen';
 $s_signup_captcha_refresh = 'Nieuwe code aanmaken';
 $s_signup_info = 'Wanneer dit formulier is ingevuld en opgestuurd, wordt een bevestiging naar het door u opgegeven e-mailadres verzonden.<br />Door de koppeling in deze e-mail te volgen, kunt u uw account activeren. U hebt zeven dagen de tijd om de registratie af te ronden. Wanneer u dit niet doet, kan de nieuwe gebruiker verwijderd worden.<br />U moet een geldig e-mailadres opgeven om de bevestiging te kunnen ontvangen.';
 $s_signup_title = 'Registreren';
@@ -1333,7 +1337,6 @@ $MANTIS_ERROR[ERROR_LDAP_AUTH_FAILED] = 'LDAP-authenticatie mislukt.';
 $MANTIS_ERROR[ERROR_LDAP_SERVER_CONNECT_FAILED] = 'LDAP serververbinding mislukt.';
 $MANTIS_ERROR[ERROR_LDAP_UPDATE_FAILED] = 'Het bijwerken van het LDAP-record is mislukt.';
 $MANTIS_ERROR[ERROR_LDAP_USER_NOT_FOUND] = 'LDAP-gebruikersgegevens niet gevonden.';
-$MANTIS_ERROR[ERROR_LDAP_EXTENSION_NOT_LOADED] = 'De LDAP-uitbreiding is niet geladen.';
 $MANTIS_ERROR[ERROR_LDAP_UNABLE_TO_SET_MIN_TLS] = 'Kan de minimale TLS-versie niet instellen op de LDAP-server.';
 $MANTIS_ERROR[ERROR_LDAP_UNABLE_TO_STARTTLS] = 'Kan StartTLS niet starten op de LDAP-server.';
 $MANTIS_ERROR[ERROR_DB_CONNECT_FAILED] = 'Databaseverbinding mislukt. Ontvangen melding van database is #%1$d: %2$s';
@@ -1341,7 +1344,7 @@ $MANTIS_ERROR[ERROR_DB_QUERY_FAILED] = 'Databasezoekopdracht mislukt. Ontvangen 
 $MANTIS_ERROR[ERROR_DB_SELECT_FAILED] = 'Het selecteren van de database is mislukt. Ontvangen melding van database is #%1$d: %2$s.';
 $MANTIS_ERROR[ERROR_DB_IDENTIFIER_TOO_LONG] = 'Database-ID "%1$s" is te lang. Probeer de grootte van <code>g_db_table_prefix</code> of <code>g_db_table_suffix</code> te beperken.';
 $MANTIS_ERROR[ERROR_CATEGORY_DUPLICATE] = 'Deze categorie bestaat al.';
-$MANTIS_ERROR[ERROR_CATEGORY_NO_ACTION] = 'Er is geen kopieerhandeling opgegeven.';
+$MANTIS_ERROR[ERROR_NO_COPY_ACTION] = 'Er is geen kopieerhandeling opgegeven.';
 $MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND] = 'De categorie is niet gevonden.';
 $MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND_FOR_PROJECT] = 'De categorie "%1$s" is niet aangetroffen voor project "%2$s".';
 $MANTIS_ERROR[ERROR_CATEGORY_CANNOT_DELETE_DEFAULT] = 'Deze categorie kan niet verwijderd worden, omdat die ingesteld staat als "Standaardcategorie voor verplaatste meldingen".';
@@ -1410,6 +1413,7 @@ $MANTIS_ERROR[ERROR_SPAM_SUSPECTED] = 'U hebt de limiet van %d handelingen in de
 $MANTIS_ERROR[ERROR_FIELD_TOO_LONG] = 'Veld "%1$s" mag maximaal %2$d tekens lang zijn.';
 $MANTIS_ERROR[ERROR_API_TOKEN_NAME_NOT_UNIQUE] = 'De API-tokennaam "%s" wordt al gebruikt. Ga terug en selecteer een andere.';
 $MANTIS_ERROR[ERROR_LOGFILE_NOT_WRITABLE] = 'Naar het bestand dat is opgegeven in $g_log_destination "%s" kan niet geschreven worden.';
+$MANTIS_ERROR[ERROR_MONITOR_ACCESS_TOO_LOW] = 'De toegevoegde gebruiker heeft niet voldoende toegangsrechten om deze melding te volgen.';
 $s_dropzone_default_message = 'Voeg bestanden toe via slepen, selecteren of plakken.';
 $s_dropzone_fallback_message = 'Uw browser heeft geen ondersteuning voor het uploaden van bestanden via slepen.';
 $s_dropzone_file_too_big = 'Het bestand is te groot ({{filesize}} MiB). Maximumgrootte: {{maxFilesize}} MiB.';

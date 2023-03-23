@@ -57,6 +57,7 @@
  * @author Ssola
  * @author Toniher
  * @author Townie
+ * @author Txemaq
  */
 
 $s_actiongroup_menu_copy = 'Copia';
@@ -658,7 +659,7 @@ $s_add_subproject = 'Afegeix com a Subprojecte';
 $s_create_new_subproject_link = 'Crea un Subprojecte Nou';
 $s_unlink_link = 'Elimina l\'Enllaç';
 $s_show_global_users = 'Mostra els Usuaris amb Accés Global';
-$s_hide_global_users = 'Oculat els Usuaris amb Accés Global';
+$s_hide_global_users = 'Oculta els Usuaris amb Accés Global';
 $s_review_changes_confirmation = 'Esteu segur que voleu aplicar els canvis següents?';
 $s_review_changes_empty = 'No s’ha seleccionat cap canvi';
 $s_add_project_title = 'Afegeix un Projecte';
@@ -1200,13 +1201,12 @@ $MANTIS_ERROR[ERROR_LDAP_AUTH_FAILED] = 'Ha fallat la validació LDAP.';
 $MANTIS_ERROR[ERROR_LDAP_SERVER_CONNECT_FAILED] = 'Ha Fallat la connexió al servidor LDAP.';
 $MANTIS_ERROR[ERROR_LDAP_UPDATE_FAILED] = 'Ha fallat l\'actualització del registre LDAP.';
 $MANTIS_ERROR[ERROR_LDAP_USER_NOT_FOUND] = 'No s\'ha trobat el registre LDAP de l\'usuari.';
-$MANTIS_ERROR[ERROR_LDAP_EXTENSION_NOT_LOADED] = 'No està carregada l\'extensió LDAP.';
 $MANTIS_ERROR[ERROR_LDAP_UNABLE_TO_STARTTLS] = 'No pot iniciar StartTLS en servidor de LDAP.';
 $MANTIS_ERROR[ERROR_DB_CONNECT_FAILED] = 'Ha fallat la connexió a la base de dades. L\'error rebut de la base de dades és: #%1$d: %2$s.';
 $MANTIS_ERROR[ERROR_DB_QUERY_FAILED] = 'Ha fallat la consulta a la base de dades. L\'error rebut de la base de dades és #%1$d: %2$s per la consulta: %3$s.';
 $MANTIS_ERROR[ERROR_DB_SELECT_FAILED] = 'Ha fallat la selecció de la base de dades. L\'error rebut de la base de dades és: #%1$d: %2$s.';
 $MANTIS_ERROR[ERROR_CATEGORY_DUPLICATE] = 'Aquesta és una categoria duplicada.';
-$MANTIS_ERROR[ERROR_CATEGORY_NO_ACTION] = 'No s\'ha especificat cap acció de còpia.';
+$MANTIS_ERROR[ERROR_NO_COPY_ACTION] = 'No s\'ha especificat cap acció de còpia.';
 $MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND] = 'Categoria no trobada.';
 $MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND_FOR_PROJECT] = 'Category "%1$s" no trobada pel projecte "%2$s".';
 $MANTIS_ERROR[ERROR_CATEGORY_CANNOT_DELETE_DEFAULT] = 'Aquesta categoria no es pot ser suprimida perquè ha estat definida com a "Categoria predefinida pels desplaçaments".';

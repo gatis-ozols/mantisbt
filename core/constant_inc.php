@@ -359,13 +359,12 @@ define( 'ERROR_LDAP_AUTH_FAILED', 1400 );
 define( 'ERROR_LDAP_SERVER_CONNECT_FAILED', 1401 );
 define( 'ERROR_LDAP_UPDATE_FAILED', 1402 );
 define( 'ERROR_LDAP_USER_NOT_FOUND', 1403 );
-define( 'ERROR_LDAP_EXTENSION_NOT_LOADED', 1404 );
 define( 'ERROR_LDAP_UNABLE_TO_SET_MIN_TLS', 1405 );
 define( 'ERROR_LDAP_UNABLE_TO_STARTTLS', 1406 );
 
 # ERROR_CATEGORY_*
 define( 'ERROR_CATEGORY_DUPLICATE', 1500 );
-define( 'ERROR_CATEGORY_NO_ACTION', 1501 );
+define( 'ERROR_NO_COPY_ACTION', 1501 );
 define( 'ERROR_CATEGORY_NOT_FOUND', 1502 );
 define( 'ERROR_CATEGORY_NOT_FOUND_FOR_PROJECT', 1503 );
 define( 'ERROR_CATEGORY_CANNOT_DELETE_DEFAULT', 1504 );
@@ -554,13 +553,6 @@ define( 'CUSTOM_FIELD_DATE_ON', 5 );
 define( 'CUSTOM_FIELD_DATE_AFTER', 6 );
 define( 'CUSTOM_FIELD_DATE_ONORAFTER', 7 );
 
-# custom field types
-define( 'CUSTOM_FIELD_TYPE_BUG', 0 );
-define( 'CUSTOM_FIELD_TYPE_USER', 1 );
-define( 'CUSTOM_FIELD_TYPE_BUGNOTE', 2 );
-define( 'CUSTOM_FIELD_TYPE_PROJECT', 3 );
-define( 'CUSTOM_FIELD_TYPE_FILE', 4 );
-
 # display types for $g_display_errors
 define( 'DISPLAY_ERROR_HALT', 'halt' );
 define( 'DISPLAY_ERROR_INLINE', 'inline' );
@@ -630,6 +622,8 @@ define( 'SECONDS_PER_DAY', 86400 );
 # Auto-generated link targets
 define( 'LINKS_SAME_WINDOW', 1 );
 define( 'LINKS_NEW_WINDOW', 2 );
+define( 'LINKS_NOOPENER', 4 );
+define( 'LINKS_NOREFERRER', 8 );
 
 # Auth Related Constants
 define( 'API_TOKEN_LENGTH', 32 );
@@ -658,8 +652,8 @@ define( 'FONT_AWESOME_VERSION', '4.7.0' );
 define( 'FONT_AWESOME_HASH', 'sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' );
 
 # Moment & DateTimePicker
-define( 'MOMENT_VERSION', '2.29.3' );
-define( 'MOMENT_HASH', 'sha512-vFABRuf5oGUaztndx4KoAEUVQnOvAIFs59y4tO0DILGWhQiFnFHiR+ZJfxLDyJlXgeut9Z07Svuvm+1Jv89w5g==' );
+define( 'MOMENT_VERSION', '2.29.4' );
+define( 'MOMENT_HASH', 'sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==' );
 define( 'DATETIME_PICKER_VERSION', '4.17.47' );
 define( 'DATETIME_PICKER_HASH_JS', 'sha256-5YmaxAwMjIpMrVlK84Y/+NjCpKnFYa8bWWBbUHSBGfU=' );
 define( 'DATETIME_PICKER_HASH_CSS', 'sha256-yMjaV542P+q1RnH6XByCPDfUFhmOafWbeLPmqKh11zo=' );
@@ -669,8 +663,8 @@ define( 'TYPEAHEAD_VERSION', '1.3.0' );
 define( 'TYPEAHEAD_HASH', 'sha256-VWMJXexFUMAwIXw/PoOzOleP6q97pIbKWuY4v9gMXoY=' );
 
 # List JS
-define( 'LISTJS_VERSION', '1.5.0' );
-define( 'LISTJS_HASH', 'sha384-JDmRxRiXkNkskRM5AD4qHRGk9ItwZ9flbqOpsRYs8SOrIRwcMtTGKP2Scnjptzgm' );
+define( 'LISTJS_VERSION', '2.3.1' );
+define( 'LISTJS_HASH', 'sha512-93wYgwrIFL+b+P3RvYxi/WUFRXXUDSLCT2JQk9zhVGXuS2mHl2axj6d+R6pP+gcU5isMHRj1u0oYE/mWyt/RjA==' );
 
 # Dropzone JS
 define( 'DROPZONE_VERSION', '5.5.0' );

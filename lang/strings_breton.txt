@@ -43,6 +43,7 @@
  * @author Fohanno
  * @author Fulup
  * @author Gwenn-Ael
+ * @author Huñvreüs
  * @author Macofe
  * @author Y-M D
  */
@@ -1011,7 +1012,7 @@ $s_sponsorship_deleted = 'Sponsoradur dilamet';
 $s_sponsorship_paid = 'Sponsoradur paeet';
 $s_sponsorship_more_info = 'Gouzout hiroc\'h diwar-benn ar sponsorañ';
 $s_sponsorship_total = 'Hollad sponsorañ';
-$s_changelog = 'Roll ar c\'hemmoù';
+$s_changelog = 'Marilh ar c\'hemmoù';
 $s_changelog_empty = 'N\'eus roll cheñchamant ebet da gaout';
 $s_changelog_empty_manager = 'Ne c\'haller kaout titour ebet eus ar renabl kemmoù. Enklozet e vez ar c\'hudennoù ur wech m\'o deus cr raktresoù stummoù. Diluziet int gant al lec\'hiadur "reizhet er stumm".';
 $s_roadmap = 'Kartenn-hent';
@@ -1293,13 +1294,12 @@ $MANTIS_ERROR[ERROR_LDAP_AUTH_FAILED] = 'Gwiriekadur LDAP c\'hwitet.';
 $MANTIS_ERROR[ERROR_LDAP_SERVER_CONNECT_FAILED] = 'C\'hwitet eo ar c\'hevreadur ouzh ar servijer LDAP';
 $MANTIS_ERROR[ERROR_LDAP_UPDATE_FAILED] = 'C\'hwitet eo hizivadenn an enrolladenn LDAP.';
 $MANTIS_ERROR[ERROR_LDAP_USER_NOT_FOUND] = 'An enrolladenn implijer LDAP n\'eo ket bet kavet.';
-$MANTIS_ERROR[ERROR_LDAP_EXTENSION_NOT_LOADED] = 'An astenn LDAP n\'eo ket karget.';
 $MANTIS_ERROR[ERROR_DB_CONNECT_FAILED] = 'C\'hwitet eo ar gevreadenn ouzh an diaz roadennoù. Ar fazi resevet digant an diaz roadennoù a oa #%1$d : %2$s.';
 $MANTIS_ERROR[ERROR_DB_QUERY_FAILED] = 'C\'hwitet eo ar reked diaz roadennoù. Ar fazi kaset gant an diaz roadennoù a oa #%1$d : %2$s evit ar reked : %3$s.';
 $MANTIS_ERROR[ERROR_DB_SELECT_FAILED] = 'C\'hwitet eo diuzadenn an diaz roadennoù. Ar fazi resevet digant an diaz roadennoù a oa #%1$d: %2$s.';
 $MANTIS_ERROR[ERROR_DB_IDENTIFIER_TOO_LONG] = 'Re hir eo anavezer an diaz roadennoù "%1$s". Klaskit bihanaat ment g_db_table_prefix/suffix';
 $MANTIS_ERROR[ERROR_CATEGORY_DUPLICATE] = 'Ur rummad en anv-se zo anezhañ dija.';
-$MANTIS_ERROR[ERROR_CATEGORY_NO_ACTION] = 'N\'eus bet diferet ober eilañ ebet.';
+$MANTIS_ERROR[ERROR_NO_COPY_ACTION] = 'N\'eus bet diferet ober eilañ ebet.';
 $MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND] = 'N\'eo ket bet kavet ar rummad.';
 $MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND_FOR_PROJECT] = 'Ar rummad « %1$s » n\'eo ket bet kavet evit ar raktres « %2$s ».';
 $MANTIS_ERROR[ERROR_CATEGORY_CANNOT_DELETE_DEFAULT] = 'Ne c\'haller ket lemel ar rumm-se rak termenet eo evel "Rumm dre ziouer evit  an dilec\'hiadoù".';

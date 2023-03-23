@@ -65,7 +65,6 @@
  * @author Woytecr
  */
 
-$s_directionality = 'ltr';
 $s_actiongroup_menu_copy = 'Kopiuj';
 $s_actiongroup_menu_assign = 'Przypisz';
 $s_actiongroup_menu_resolve = 'Rozwiąż';
@@ -1300,13 +1299,12 @@ $MANTIS_ERROR[ERROR_LDAP_AUTH_FAILED] = 'Uwierzytelnienie LDAP nie powiodło si�
 $MANTIS_ERROR[ERROR_LDAP_SERVER_CONNECT_FAILED] = 'Komunikacja z serwerem LDAP nie powiodła się.';
 $MANTIS_ERROR[ERROR_LDAP_UPDATE_FAILED] = 'Nie udało się uaktualnić rekordu LDAP .';
 $MANTIS_ERROR[ERROR_LDAP_USER_NOT_FOUND] = 'Rekord użytkownika LDAP nie znaleziony.';
-$MANTIS_ERROR[ERROR_LDAP_EXTENSION_NOT_LOADED] = 'Rozszerzenie LDAP nie zostało załadowane';
 $MANTIS_ERROR[ERROR_DB_CONNECT_FAILED] = 'Błąd połączenia z bazą danych %1$d – %2$s.';
 $MANTIS_ERROR[ERROR_DB_QUERY_FAILED] = 'Błąd wykonania zapytania w bazie danych %1$d – %2$s dla zapytania %3$s.';
 $MANTIS_ERROR[ERROR_DB_SELECT_FAILED] = 'Błąd bazy danych %1$d – %2$s.';
 $MANTIS_ERROR[ERROR_DB_IDENTIFIER_TOO_LONG] = 'Identyfikator bazodanowy "%1$s" jest za długi. Spróbuj zmniejszyć rozmiar g_db_table_prefix/suffix';
 $MANTIS_ERROR[ERROR_CATEGORY_DUPLICATE] = 'Podana kategoria już istnieje.';
-$MANTIS_ERROR[ERROR_CATEGORY_NO_ACTION] = 'Nie zdefiniowano możliwości kopiowania.';
+$MANTIS_ERROR[ERROR_NO_COPY_ACTION] = 'Nie zdefiniowano możliwości kopiowania.';
 $MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND] = 'Nie znaleziono kategorii.';
 $MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND_FOR_PROJECT] = 'Brak kategorii „%1$s” dla projektu „%2$s”.';
 $MANTIS_ERROR[ERROR_CATEGORY_CANNOT_DELETE_DEFAULT] = 'Nie można usunąć tej kategorii, ponieważ jest ona zdefiniowana jako "Domyślna kategoria do Przenoszenia".';

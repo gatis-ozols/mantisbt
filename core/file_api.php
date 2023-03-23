@@ -721,7 +721,7 @@ function file_type_check( $p_file_name ) {
 		}
 	}
 
-	# if the allowed list is note populated then the file must be allowed
+	# if the allowed list is not populated then the file must be allowed
 	if( is_blank( $t_allowed_files ) ) {
 		return true;
 	}
@@ -795,7 +795,7 @@ function diskfile_is_name_unique( $p_name, $p_filepath ) {
  * @return boolean true if unique
  */
 function file_is_name_unique( $p_name, $p_bug_id, $p_table = 'bug' ) {
-	$t_file_table = db_get_table( "${p_table}_file" );
+	$t_file_table = db_get_table( "{$p_table}_file" );
 
 	db_param_push();
 	$t_query = 'SELECT COUNT(*) FROM ' . $t_file_table . ' WHERE filename=' . db_param();

@@ -42,7 +42,6 @@
  * @author Purodha
  */
 
-$s_directionality = 'ltr';
 $s_actiongroup_menu_copy = 'Kopeere';
 $s_actiongroup_menu_assign = 'Zohdeile';
 $s_actiongroup_menu_resolve = 'Fädesch maache';
@@ -835,12 +834,11 @@ $MANTIS_ERROR[ERROR_LDAP_AUTH_FAILED] = 'De Zohjangspröövung per LDAP es donev
 $MANTIS_ERROR[ERROR_LDAP_SERVER_CONNECT_FAILED] = 'De Verbendung nohm ldap-ẞööver hät nit jeklapp.';
 $MANTIS_ERROR[ERROR_LDAP_UPDATE_FAILED] = 'Dä ldap-Enndraach op der neuste Shtand ze bränge hät nit jeflupp.';
 $MANTIS_ERROR[ERROR_LDAP_USER_NOT_FOUND] = 'Dä Metmaacher_Enndraach em LDAP wood nit jefonge.';
-$MANTIS_ERROR[ERROR_LDAP_EXTENSION_NOT_LOADED] = 'Dat Zohsazprojramm för LDAP es nit jelaade.';
 $MANTIS_ERROR[ERROR_DB_CONNECT_FAILED] = 'En Verbendung met de Datebangk hät nit jeflupp. Se mäldt dä Fähler: #%1$d: %2$s.';
 $MANTIS_ERROR[ERROR_DB_QUERY_FAILED] = 'En Aanfrooch aan de Datebangk hät nit jeflupp. Se mäldt dä Fähler: #%1$d: %2$s för di Aanfrooch: %3$s.';
 $MANTIS_ERROR[ERROR_DB_SELECT_FAILED] = 'De Ußwahl vun de Datebangk hät nit jeflupp. Se mäldt dä Fähler: #%1$d: %2$s.';
 $MANTIS_ERROR[ERROR_CATEGORY_DUPLICATE] = 'En Saachjropp met dämm Name jidd_et ald.';
-$MANTIS_ERROR[ERROR_CATEGORY_NO_ACTION] = 'Et es kein Kopeer_Aufjab aanjejovve.';
+$MANTIS_ERROR[ERROR_NO_COPY_ACTION] = 'Et es kein Kopeer_Aufjab aanjejovve.';
 $MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND] = 'Di Saachjropp wood nit jefonde.';
 $MANTIS_ERROR[ERROR_CATEGORY_NOT_FOUND_FOR_PROJECT] = 'En Saachjropp „%1$s“ för dat Projäk „%2$s“ wood nit jefonge.';
 $MANTIS_ERROR[ERROR_VERSION_DUPLICATE] = 'En Version met däm Name jidd_et ald.';
